@@ -1,0 +1,36 @@
+
+ul {
+    li{
+        font-size: 12px;
+        line-height: 30px;
+        /*奇数*/
+        &:nth-child(odd) {
+            background-color: lightblue;
+        }
+        /*偶数*/
+        &:nth-child(even) {
+            background-color: lightgreen;
+        }
+    }
+}
+.img{
+    background: url('../imgs/1.jpg');
+    width:260px;
+    height: 400px;
+    background-size: cover;
+}
+.me{
+    background: url('../imgs/me.jpg');
+    width:260px;
+    height: 400px;
+    background-size: cover;
+}
+.fl-clear{
+    float: left;
+    clear: both;
+    color: red;
+}
+input::placeholder {
+    color: #888;
+    text-align: left;
+  }

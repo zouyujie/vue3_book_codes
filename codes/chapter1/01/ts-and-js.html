@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var val = 33;
+        console.log(typeof val) // "number"
+        val = '葵花宝典'
+        console.log(typeof val) // "string"
+        val = { name: '东方不败' }
+        val = function () {
+            console.log('人生自古谁无种，留取丹心断命根')
+        }
+        console.log(val); //ƒ ()
+        console.log(val.xx) // undefined
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+.operation-screen {
+  background-image: url("/imgs/bg/operate-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+//时间类型容器
+.time-tab-box {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  z-index: 9;
+}
+// grid容器
+.grid-layout {
+  display: grid;//指定采用网格布局
+  grid-gap: 1px; //item(项目)相互之间的距离
+  grid-template-columns: repeat(100, 1fr); // 宽度平均分成100等份
+  grid-template-rows: repeat(100, 1%); //高度平分100等份
+  grid-auto-flow: row;//容器子元素"先行后列"进行排列
+  height: calc(100% - 80px); //容器高度
+  //子元素-项目
+  //grid-column属性是grid-column-start和grid-column-end的合并简写形式，
+  //grid-row属性是grid-row-start属性和grid-row-end的合并简写形式。
+  .grid-item {
+    //线网
+    &.line-net {
+      grid-column: 1/28;
+      grid-row: 1/25;
+    }
+    //车辆
+    &.bus {
+      grid-column: 1/28;
+      grid-row: 25/48;
+    }
+    //违规原因分析
+    &.getout-reasons {
+      grid-column: 72/101;
+      grid-row: 1/44;
+    }
+    //卡类型使用情况
+    &.card-type-use {
+      grid-column: 1/28;
+      grid-row: 48/72;
+    }
+    //线路运客数排名
+    &.transport-passenger-rank {
+      grid-column: 72/101;
+      grid-row: 44/72;
+    }
+    //电子支付趋势
+    &.e-pay-trend {
+      grid-column: 1/101;
+      grid-row: 72/101;
+    }
+    //区域客流统计
+    &.area-passenger-stat {
+      grid-column: 28/72;
+      grid-row: 1/72;
+    }
+  }
+}
